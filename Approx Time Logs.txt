@@ -1,0 +1,21 @@
+Generation, 64x64 RT, rounded values
+
+- With regular instancing, tracking by adding to array
+Approx 16 seconds generation
+Approx 8 seconds clear
+
+- With instanced mesh instancing (sequential, 64x64 times)
+Approx 4 seconds generation
+Near instant clear
+
+- With instanced mesh instancing (batch)
+Approx 4 seconds, seems slightly longer than for sequentially generating them
+Near instant clear
+
+- With instanced mesh instancing (batch, separated transform creation and the instancing itself)
+Approx 3 seconds to create transforms
+Near 1 second to create instances
+Near instant clear
+
+512x512
+Took a good 20+ minutes to generate, around 2-3 seconds to clear, rendering seemed to not have a high impact
