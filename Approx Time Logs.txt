@@ -17,5 +17,5 @@ Approx 3 seconds to create transforms
 Near 1 second to create instances
 Near instant clear
 
-512x512
+512x512 (260k)
 Took a good 20+ minutes to generate, around 2-3 seconds to clear, rendering seemed to not have a high impact
